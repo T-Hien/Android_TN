@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200sp"
+                    android:layout_height="30sp"
+                    android:text="Danh mục"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnAddHome"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:layout_marginLeft="30sp"
+                    android:background="#00000000"
+                    android:foreground="@drawable/baseline_add_circle_outline_red_24" />
+
+                <Button
+                    android:id="@+id/btnTopicHome"
+                    android:layout_width="128sp"
+                    android:layout_height="45sp"
+                    android:layout_marginLeft="10sp"
+                    android:backgroundTint="#97E1E6E4"
+                    android:text="Xem tất cả"
+                    android:textColor="#A61212"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lvHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="354dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="110sp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <LinearLayout
+                android:layout_width="80sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="10sp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnStatisticalHome"
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:layout_marginTop="10sp"
+                    android:background="#00FFFCFC"
+                    android:foreground="@drawable/thongke_img" />
+
+                <TextView
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:text="Thống kê"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80sp"
+                android:layout_height="100sp"
+                android:layout_marginLeft="10sp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnShareTopicSetHome"
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:layout_marginTop="10sp"
+                    android:background="#00FFFCFC"
+                    android:foreground="@drawable/bode_chiase" />
+
+                <TextView
+                    android:layout_width="70sp"
+                    android:layout_height="30sp"
+                    android:layout_gravity="center"
+                    android:text="Bộ đề chia sẻ"
+                    android:textColor="#000"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
+            android:layout_height="220sp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/home2" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

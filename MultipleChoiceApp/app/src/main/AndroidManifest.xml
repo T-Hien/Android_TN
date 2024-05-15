@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MultipleChoiceApp"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.TRIEU.MainRenovationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.THien.addTopic"
+            android:exported="false" />
+        <activity
+            android:name=".activities.THien.Home"
+            android:exported="true" />
+        <activity
+            android:name=".activities.QUY.OTPVerification"
+            android:exported="true" />
+        <activity
+            android:name=".activities.QUY.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name=".activities.QUY.Register"
+            android:exported="true" />
+        <activity
+            android:name=".activities.QUY.Loading"
+            android:exported="true" />
+        <activity
+            android:name=".activities.QUY.Login"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TRIEU.TopicSetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TRIEU.ShareActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TRIEU.NotificationActivity"
+            android:exported="true" /> <!-- Thu Hien -->
+        <activity
+            android:name=".activities.THien.Topic_Home"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.LevelQuestion"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.Exam"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.TopicSet"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.SaveExamResult"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.ExamAgain"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.Account"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.AccountUser"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.UpdateUser"
+            android:exported="true" />
+        <activity
+            android:name=".activities.THien.Contruct"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Hien.ChartPoint"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Hien.ChartStatistic"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Hien.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Hien.RatingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Hien.StatisticalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Hien.PDFPoint"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Hien.PDFStatistical"
+            android:exported="true" />
+        <activity
+            android:name=".activities.Minh.CreateTopicSetActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

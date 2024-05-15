@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/imHinh"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/sach5"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMaCD"
+                android:layout_width="250dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@color/end_button"
+                android:gravity="center_vertical"
+                android:text="Mã đề:"
+                android:textColor="#E30C3E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvTenMon"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:text="Môn:"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNguoiTao"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:text="Người tạo:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/tp1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="250dp"
+                android:layout_height="20sp"
+                android:max="100"
+                android:progress="100" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

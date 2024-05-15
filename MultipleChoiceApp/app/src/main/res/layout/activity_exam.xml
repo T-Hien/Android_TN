@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.THien.Exam">
+
+    <LinearLayout
+        android:layout_width="412sp"
+        android:layout_height="50sp"
+        android:background="@drawable/background">
+        <TextView
+            android:id="@+id/txtSentence"
+            android:layout_width="170sp"
+            android:layout_height="wrap_content"
+            android:text="Câu"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.035"
+            android:paddingTop="10sp"/>
+
+        <Button
+            android:id="@+id/btnBeforeExam"
+            android:layout_width="65sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:text="Câu trước"
+            android:backgroundTint="#132271"
+            android:onClick="onBtnBeforeClicked"/>
+
+        <Button
+            android:id="@+id/btnAfterExam"
+            android:layout_width="65sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:text="Câu sau"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:backgroundTint="#132271"
+            android:onClick="onBtnAfterClicked"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="410sp"
+        android:layout_height="680sp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="410sp"
+            android:layout_height="80sp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/snlistExam"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:background="#00E6D8D8"/>
+            <TextView
+                android:layout_width="150sp"
+                android:layout_height="40sp"
+                android:layout_marginTop="15sp"
+                android:textSize="25sp"
+                android:text="Time"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/txtTime"
+                android:background="@drawable/borders"/>
+
+            <Button
+                android:id="@+id/btnSubmitExam"
+                android:layout_width="120sp"
+                android:layout_height="50sp"
+                android:textSize="15sp"
+                android:text="Nộp bài"
+                android:layout_marginLeft="15sp"
+                android:layout_marginBottom="10sp"
+                android:backgroundTint="#132271"
+                android:onClick="onBtnSubmitClicked"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtContextExam"
+            android:layout_width="350sp"
+            android:layout_height="220sp"
+            android:text="Câu hỏi"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.426"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.104"
+            android:paddingLeft="10sp"
+            android:background="@drawable/borders"/>
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvDanhsach"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

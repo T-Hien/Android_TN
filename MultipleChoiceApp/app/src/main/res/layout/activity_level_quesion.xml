@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.THien.LevelQuestion"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="8sp"/>
+
+        <Button
+            android:id="@+id/btnHomeLevelExam"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="220sp"
+            android:backgroundTint="#00FFFFFF"
+            android:foreground="@drawable/baseline_home_24" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="518dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="54dp"
+        android:layout_marginTop="100sp"
+        android:background="#FFFCFC">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Chọn độ khó bài thi"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="140sp"
+            android:id="@+id/snListLevel"/>
+        <Button
+            android:layout_width="120sp"
+            android:layout_height="50sp"
+            android:text="Thi"
+            android:textStyle="bold"
+            android:layout_marginTop="180sp"
+            android:layout_marginLeft="140sp"
+            android:textSize="20sp"
+            android:id="@+id/btnExamLevel"/>
+
+    </LinearLayout>
+
+</LinearLayout>

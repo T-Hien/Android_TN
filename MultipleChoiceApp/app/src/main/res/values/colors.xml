@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="start_background">#5deDe6</color>
+    <color name="end_background">#004aad</color>
+    <color name="start_button">#000000</color>
+    <color name="end_button">#3533cd</color>
+    <color name="active">#ffbd59</color>
+    <color name="process">#16a428</color>
+    <color name="right_answer">#18a62a</color>
+    <color name="wrong_answer">#ff3e3e</color>
+    <color name="answer">#0a9def</color>
+    <color name="search_background">#33FFFFFF</color>
+</resources>

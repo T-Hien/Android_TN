@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416745910714",
+    "project_id": "multiplechoiceapp-dc669",
+    "storage_bucket": "multiplechoiceapp-dc669.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416745910714:android:6315367cc2dd1832742d83",
+        "android_client_info": {
+          "package_name": "com.example.multiplechoiceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChuKkPqBbck4l0tzv12_k2KMAfGjA5BLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

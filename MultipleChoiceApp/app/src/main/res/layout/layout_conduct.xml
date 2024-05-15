@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp">
+
+        <Button
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginLeft="340sp"
+            android:background="#00000000"
+            android:foreground="@drawable/baseline_notifications_24"
+            android:id="@+id/btnShareConduct"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:text="Hướng dẫn sử dụng"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="430sp"
+            android:layout_margin="10sp"
+            android:text="1. \n2. \n3. \n"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30sp">
+            <Button
+                android:layout_width="120sp"
+                android:layout_height="60sp"
+                android:text="Thoát"
+                android:layout_marginLeft="10sp"
+                android:backgroundTint="#132271"
+                android:id="@+id/btnExitContruct"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

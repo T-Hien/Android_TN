@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.THien.SaveExamResult">
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@drawable/background">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:text="Kết quả thi"
+            android:textSize="20sp"
+            android:layout_margin="8sp"/>
+
+        <Button
+            android:id="@+id/btnHomeSaveExamResult"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="220sp"
+            android:backgroundTint="#00FFFFFF"
+            android:foreground="@drawable/baseline_home_24" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="412dp"
+        android:layout_height="518dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="54dp"
+        android:background="#FFFCFC">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:layout_width="250sp"
+            android:layout_height="250sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:id="@+id/pieBD"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Bạn đã hoàn thành bài thi"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtTimeResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thời gian thi: "
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txtSelectResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số câu đã làm: "
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtExamResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điểm:"
+            android:textSize="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="414dp"
+        android:layout_height="162dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="#FFFCFC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/btnDetailSaveExamResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết bài thi"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="605dp" />
+
+        <Button
+            android:id="@+id/btnRetestSaveExamResult"
+            android:layout_width="130sp"
+            android:layout_height="wrap_content"
+            android:text="Thi lại"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="605dp"
+            android:layout_marginLeft="15sp"
+            android:onClick="onBtnRetestSERClicked"/>
+    </LinearLayout>
+
+</LinearLayout>
